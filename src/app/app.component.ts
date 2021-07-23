@@ -25,5 +25,11 @@ export class AppComponent {
       content: bluprintData.ServerContent
     });
   }
+  onchangefirst(){
+    this.serverElements[0].name = 'changed';
+  }
+  onDeletefirst(){
+    this.serverElements.splice(0,1);
+  }
  
 }

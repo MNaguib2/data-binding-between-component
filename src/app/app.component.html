@@ -6,9 +6,16 @@
   <hr>
   <div class="row">
     <div class="col-xs-12">
+      <button class="btn btn-primary" 
+      (click) = "onchangefirst()"
+       >Changed Name</button>
+       <button class="btn btn-danger" 
+      (click) = "onDeletefirst()"
+       >Delete First component</button>
      <app-server-element *ngFor="let element of serverElements"
-     [srvElement] = "element">
-     <p>
+     [srvElement] = "element"
+     [name] ="element.name">
+     <p #Paragraph>
       <strong *ngIf="element.type === 'server'" style="color: red">{{ element.content }}
       </strong>
       <em *ngIf="element.type === 'blueprint'">{{ element.content }}</em>
