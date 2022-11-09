@@ -1,4 +1,5 @@
-import { AfterContentChecked, AfterContentInit, AfterViewChecked, AfterViewInit, Component, ContentChild, DoCheck, ElementRef, Input, OnChanges, OnDestroy, OnInit, SimpleChanges, ViewChild, } from '@angular/core';
+import { AfterContentChecked, AfterContentInit, AfterViewChecked, AfterViewInit, Component, ContentChild, DoCheck, 
+  ElementRef, Input, OnChanges, OnDestroy, OnInit, SimpleChanges, ViewChild, } from '@angular/core';
 
 @Component({
   selector: 'app-server-element',
